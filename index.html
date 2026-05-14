@@ -6,6 +6,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Website for Ceramic soul brand" />
 	<meta name="author" content="Awesome student" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://metatags.io/" />
+	<meta property="og:title" content="Ceramic soul" />
+	<meta property="og:description"
+		content="“Ceramic Soul” offers unique ceramic pieces, handcrafted with love and attention to detail. Each piece combines traditional craftsmanship with modern style, bringing warmth and comfort to your home." />
+	<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+	<!-- X (Twitter) -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://metatags.io/" />
+	<meta property="twitter:title" content="Ceramic soul" />
+	<meta property="twitter:description"
+		content="“Ceramic Soul” offers unique ceramic pieces, handcrafted with love and attention to detail. Each piece combines traditional craftsmanship with modern style, bringing warmth and comfort to your home." />
+	<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/src/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/src/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/src/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/src/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/src/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/src/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/src/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/src/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/src/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/src/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/src/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/src/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/src/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/src/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 	<title>Ceramic soul</title>
 	<link rel="icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,7 +91,7 @@
 				<h1 class="title-h1-italic promo__title">Make your dream come true <br> or decorate your home</h1>
 				<div class="promo__cta">
 					<img class="promo__img" src="/src/img/promo/ceramic-vase.jpg" alt="ceramic-vase">
-					<button class="btn-default promo__btn">shop now</button>
+					<button id="btn-shop-now" class="btn-default promo__btn">shop now</button>
 				</div>
 			</div>
 		</div>
@@ -105,37 +140,23 @@
 						<fieldset class="touch__fieldset">
 							<div class="touch__input-block">
 								<label class="touch__label" for="name">Name</label>
-								<input 
-								class="touch__input" 
-								type="text" 
-								id="name" 
-								name="name" 
-								placeholder="Name" required>
+								<input class="touch__input" type="text" id="name" name="name" placeholder="Name"
+									required>
 							</div>
 							<div class="touch__input-block">
 								<label class="touch__label" for="email">Email</label>
-								<input 
-								class="touch__input" 
-								type="email" 
-								id="email" 
-								name="email" 
-								placeholder="Email" required>
+								<input class="touch__input" type="email" id="email" name="email" placeholder="Email"
+									required>
 							</div>
 						</fieldset>
 						<label class="touch__label" for="question">Your question</label>
-						<textarea 
-						class="touch__textarea" 
-						name="question" 
-						id="question" 
-						placeholder="Question" required></textarea>
+						<textarea class="touch__textarea" name="question" id="question" placeholder="Question"
+							required></textarea>
 
 						<div class="error-message"></div>
 
 						<label class="touch__label touch__check-block" for="checkbox">
-							<input 
-							class="touch__checkbox" 
-							type="checkbox" 
-							id="checkbox" required>
+							<input class="touch__checkbox" type="checkbox" id="checkbox" required>
 							I agree with the <a href="#">terms</a>
 						</label>
 
@@ -187,20 +208,13 @@
 					<h2 class="footer__header">newsletter</h2>
 					<div class="footer__text footer__text_spaced">Keep up to date with news and promotions</div>
 					<form action="#" class="footer__form">
-						<input 
-						class="footer__input" 
-						id="footer__email" 
-						type="email" 
-						name="email"
-						placeholder="Enter your e-mail" required>
+						<input class="footer__input" id="footer__email" type="email" name="email"
+							placeholder="Enter your e-mail" required>
 
 						<div class="email-error-message"></div>
 
 						<label class="footer__check-block" for="footer__checkbox">
-							<input 
-							class="footer__checkbox" 
-							type="checkbox" 
-							id="footer__checkbox" required>
+							<input class="footer__checkbox" type="checkbox" id="footer__checkbox" required>
 							I agree with the <a href="#">terms</a>
 						</label>
 

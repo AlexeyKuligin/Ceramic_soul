@@ -185,3 +185,7 @@ try {
 				});
 		});
 } catch (e) {}
+
+document.getElementById('btn-shop-now').onclick = () => {
+  window.location.href = '/catalog';
+};
